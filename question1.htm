@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+        <title>Course Enrollment Form</title>
+
+    <style>
+        h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: beige;
+            color: rebeccapurple;
+        }
+        form{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: darkgray;
+            color: rgb(215, 19, 19);
+        }
+
+    </style>
+    </head>
+    <body>
+        <h2>Course enrollment form</h2>
+        <form>
+            <label>Student Name:</label>
+            <input type="text" name="full name" placeholder="enter student name" required><br><br>
+            <label>Roll no: </label>
+            <input type="text" name="Roll Number" placeholder="enter your roll number" required><br><br>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="enter your email"required><br><br>
+
+            <label>Course selection:</label>
+            <input type="checkbox" name="cyber security" required>
+                        cyber security   <br><br>
+            <input type="checkbox" name="data science" required>
+                        data science   <br><br>
+            <input type="checkbox" name="machine learning" required>
+                        machin learning   <br><br>
+            <label>Mode of Study:</label>
+            <input type="radio" name="mode of study" value="online">Online
+            <input type="radio" name="mode of study" value="offline">Offline
+            <input type="radio" name="mode of study" value="other">Other<br><br>
+            <button type="submit">Submit</button>
+        </forms>
+    </body>
+</html>

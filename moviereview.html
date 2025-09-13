@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            background-color: aquamarine;
+        }
+        .container {
+            background: #fff;
+            width: 400px;
+            margin: 50px auto;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            background-color: aliceblue;
+            
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 8px 0 5px;
+            color: #444;
+        }
+        input [type="submit"],input [type="reset"]{
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Movie Review Form</h2>
+    <form>
+        <label>Movie Name:</label><br>
+        <input type="text" name="moviename" placeholder="Enter movie name" required><br><br>
+
+        <label>Your Name:</label><br>
+        <input type="text" name="username" placeholder="Enter your name" required><br><br>
+
+        <label>Rating:</label><br>
+        <select name="rating" required>
+            <option value="">--Select Rating--</option>
+            <option>*</option>
+            <option>**</option>
+            <option>***</option>
+            <option>****</option>
+            <option>*****</option>
+        </select><br><br>
+
+        <label>Your Review:</label><br>
+        <textarea name="review" rows="4" placeholder="Write your review here..." required></textarea><br><br>
+
+        <input type="submit" value="Submit Review">
+        <input type="reset" value="Clear">
+    </form>
+    </div>
+</body>
+</html>

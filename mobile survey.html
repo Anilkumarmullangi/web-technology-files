@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <head>
+    <title>
+      mobile survey form
+    </title>
+
+    <style>
+      
+      .container{
+        margin-left: 15cm;
+        margin-right:15cm;
+        background-color: rgb(233, 219, 212);
+        text-align: center ;
+        border-radius: 2px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: rgb(159, 246, 159);
+      }
+body {
+  background: linear-gradient(to right, pink 20%,  rgb(227, 117, 117) 80%);
+  
+}
+
+    </style>
+  </head>
+  <body >
+    <div class="container">
+      <h2>Mobile Survey Form</h2>
+      <form action="#" method="post">
+        <label>Full name:</label>
+        <input type="text" name="Full Name" placeholder="enter your name" required><br><br>
+
+        <label>Mobile Nubmer:</label>
+        <input type="number" name="number" placeholder="enter your number" required><br><br>
+
+        <label>mobile brand Name:</label>
+        <input type="text" name="Name" placeholder="enter your Mobile brand" required><br><br>
+
+        <label>Mobile Model</label>
+        <input type="text" name="model name" placeholder="enter your mobile model" required><br><br>
+
+        <label>gender:</label>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="Female" style="margin-left:56px">female<br>
+        <input type="radio" name="gender" value="other" style="margin-left:56px">Other<br><br>
+
+        <label>type of purchase</label>
+        <select name="course " required>
+          <option>----select type of purchase----</option>
+          <option>online</option>
+          <option>offline</option>
+        </select> <br>
+
+        <label>languages known:</label>
+        <input type="checkbox" name="lang1" value="telugu">telugu<br>
+        <input type="checkbox" name="lang2" value="english" style="margin-left:123px">english<br>
+        <input type="checkbox" name="lang3" value="hindhi" style="margin-left:123px">hindhi<br><br>
+        
+        <button type="submit">submit</button>
+      </form>
+    </div>
+  </body>
+</html>

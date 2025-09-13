@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports Scoreboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #f0f9ff, #cbebff);
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            background: linear-gradient(90deg, #ff5722, #ff9800);
+            padding: 15px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background: #009688;
+            color: white;
+            font-size: 18px;
+        }
+
+        tr {
+            background-color: #e0f7fa;
+            transition: background 0.3s ease;
+        }
+
+        tr:nth-child(even) {
+            background-color: #b2ebf2;
+        }
+
+        tr:hover {
+            background-color: #80deea;
+            transform: scale(1.02);
+        }
+
+        td:first-child {
+            font-weight: bold;
+            color: #ffffff;
+            background: #ff5252;
+            border-right: 2px solid white;
+        }
+
+        td[rowspan] {
+            background: #ffecb3;
+            font-weight: bold;
+            color: #6d4c41;
+        }
+
+        @media screen and (max-width: 768px) {
+            table {
+                width: 95%;
+                font-size: 14px;
+            }
+            th, td {
+                padding: 10px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>IPL 2026 Team Table</h2>
+    <table>
+        <tr>
+            <th>Team Name</th>
+            <th>Matches Played</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>RCB</td>
+            <td rowspan="6">14</td>
+            <td>10</td>
+            <td>4</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td style="background:#2196f3;">MI</td>
+            <td>9</td>
+            <td>5</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td style="background:#fdd835;">CSK</td>
+            <td>9</td>
+            <td>5</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td style="background:#ff9800;">SRH</td>
+            <td>8</td>
+            <td>6</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td style="background:#9c27b0;">KKR</td>
+            <td>7</td>
+            <td>7</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td style="background:#4caf50;">DC</td>
+            <td>6</td>
+            <td>8</td>
+            <td>12</td>
+        </tr>
+    </table>
+</body>
+</html>
