@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #121417; /* Darker modern background */
+      color: #f1f1f1;
+    }
+
+    header {
+      background: #1e88e5; /* Brighter blue */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+    }
+    header .user {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      background: #1c1f2a; /* Darker nav bg */
+      padding: 10px;
+      gap: 10px;
+      justify-content: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #e0e0e0;
+      font-size: 14px;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #1e88e5;
+      color: #fff;
+    }
+
+    .content {
+      padding: 25px;
+    }
+    h2 {
+      font-weight: 600;
+      color: #1e88e5;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #1c1f2a; /* table bg */
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    th, td {
+      padding: 14px;
+      text-align: left;
+      border-bottom: 1px solid #2a2f3e;
+      font-size: 14px;
+    }
+    th {
+      background: #2a2f3e;
+      font-weight: 600;
+    }
+    tr:hover {
+      background: #323947;
+    }
+
+    .status-finished {
+      color: #4caf50;
+      font-weight: 600;
+    }
+    .status-wip {
+      color: #ffb300;
+      font-weight: 600;
+    }
+    .status-eta {
+      color: #f44336;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1>8IQ Dashboard</h1>
+    <div class="user">Virgil Pana ⚙</div>
+  </header>
+
+  <nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Users</a>
+    <a href="#">Priority</a>
+    <a href="#">Collections</a>
+    <a href="#">Archived</a>
+    <a href="#">Deleted</a>
+    <a href="#">Trends</a>
+    <a href="#">Tasks</a>
+    <a href="#">Filters</a>
+    <a href="#">Stats</a>
+  </nav>
+
+  <div class="content">
+    <h2>March 2014</h2>
+    <table>
+      <tr>
+        <th>Customer</th>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Address</th>
+        <th>Revenue</th>
+        <th>VAT</th>
+        <th>Total Price</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>IBBP Apps</td>
+        <td>H&R Real</td>
+        <td>Joshua O'</td>
+        <td>276 Tremont Street, Boston, MA</td>
+        <td>$420,930</td>
+        <td>$12,834</td>
+        <td>$840,742</td>
+        <td class="status-finished">FINISHED</td>
+      </tr>
+      <tr>
+        <td>SRA General</td>
+        <td>Great West</td>
+        <td>Eli Ahmad</td>
+        <td>1310 Mission Street, San Francisco</td>
+        <td>$312,840</td>
+        <td>$7,040</td>
+        <td>$312,840</td>
+        <td class="status-wip">WIP</td>
+      </tr>
+      <tr>
+        <td>CCST</td>
+        <td>Fording Fi</td>
+        <td>Dennis Vill</td>
+        <td>San Diego, CA</td>
+        <td>$112,483</td>
+        <td>$4,983</td>
+        <td>$112,483</td>
+        <td class="status-wip">WIP</td>
+      </tr>
+      <tr>
+        <td>Accupure</td>
+        <td>CC Imperi</td>
+        <td>Carlos Rica</td>
+        <td>Vine Street, Philadelphia</td>
+        <td>$840,742</td>
+        <td>$12,834</td>
+        <td>$1,240,390</td>
+        <td class="status-eta">ETA</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

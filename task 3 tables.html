@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Pricing Table</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradient background */
+    }
+
+    .pricing-container {
+      display: flex;
+      gap: 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      padding: 30px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 26px;
+      color: #333;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      color: #555;
+      margin: 5px 0 15px;
+      font-style: italic;
+    }
+
+    .price {
+      font-size: 32px;
+      margin: 15px 0;
+      font-weight: 700;
+    }
+
+    .price span {
+      font-size: 16px;
+      color: #777;
+    }
+
+    ul.features {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      color: #555;
+      font-size: 14px;
+    }
+
+    ul.features li {
+      margin: 10px 0;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    .personal { background: #e0f7fa; border-top: 5px solid #00bcd4; }
+    .personal .price { color: #00bcd4; }
+    .personal .read-more { background: #00bcd4; }
+    .personal .read-more:hover { background: #0097a7; }
+
+    .business { background: #fff3e0; border-top: 5px solid #ff9800; }
+    .business .price { color: #ff9800; }
+    .business .read-more { background: #ff9800; }
+    .business .read-more:hover { background: #f57c00; }
+
+    .enterprise { background: #f3e5f5; border-top: 5px solid #9c27b0; }
+    .enterprise .price { color: #9c27b0; }
+    .enterprise .read-more { background: #9c27b0; }
+    .enterprise .read-more:hover { background: #7b1fa2; }
+
+    .card img {
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="pricing-container">
+    <div class="card personal">
+      <h2>Personal</h2>
+      <p class="subtitle">We Think Ahead</p>
+      <div class="price">$29 <span>/month</span></div>
+      <ul class="features">
+        <li>Mobile-Optimized</li>
+        <li>Free Custom Domain</li>
+        <li>Best Web Hosting</li>
+        <li>Outstanding Support Team</li>
+        <li>Our Happy Customers</li>
+      </ul>
+      <a href="#" class="read-more">READ MORE</a>
+      <img src="https://via.placeholder.com/250x120?text=Personal+Image" alt="Personal Plan Image">
+    </div>
+
+    <div class="card business">
+      <h2>Business</h2>
+      <p class="subtitle">Special Offer</p>
+      <div class="price">$38 <span>/month</span></div>
+      <ul class="features">
+        <li>Mobile-Optimized</li>
+        <li>Free Custom Domain</li>
+        <li>Best Web Hosting</li>
+        <li>Outstanding Support Team</li>
+        <li>Our Happy Customers</li>
+      </ul>
+      <a href="#" class="read-more">READ MORE</a>
+      <img src="https://via.placeholder.com/250x120?text=Business+Image" alt="Business Plan Image">
+    </div>
+
+    <div class="card enterprise">
+      <h2>Enterprise</h2>
+      <p class="subtitle">Our Best Solution</p>
+      <div class="price">$75 <span>/month</span></div>
+      <ul class="features">
+        <li>Mobile-Optimized</li>
+        <li>Free Custom Domain</li>
+        <li>Best Web Hosting</li>
+        <li>Outstanding Support Team</li>
+        <li>Our Happy Customers</li>
+      </ul>
+      <a href="#" class="read-more">READ MORE</a>
+      <img src="https://via.placeholder.com/250x120?text=Enterprise+Image" alt="Enterprise Plan Image">
+    </div>
+  </div>
+</body>
+</html>
